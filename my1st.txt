@@ -1,6 +1,7 @@
 I'm following Daniel Shiffman's video about github 
 
-follow his video on youtube:
+follow his videos on youtube:
 
 https://youtu.be/BCQHnlnPusY
 
+my first change
