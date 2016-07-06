@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\newemka980\Documents\mabwork\SELECTION VVVV\mabmod\VVVV-tools-and-stuff\modulators\modulators21.v4p" systemname="modulators21" filename="F:\SELECTION VVVV\node bank\modulators21.v4p" scrollx="0" scrolly="3720" locked="0">
+   <PATCH nodename="C:\Users\newemka980\Documents\mabwork\SELECTION VVVV\mabmod\VVVV-tools-and-stuff\modulators\modulators21.v4p" systemname="modulators21" filename="F:\SELECTION VVVV\node bank\modulators21.v4p" scrollx="0" scrolly="5925" locked="0">
    <BOUNDS type="Window" left="2655" top="2655" width="21405" height="12675">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
@@ -136,18 +136,6 @@
    <LINKPOINT x="5460" y="5040">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="3540" top="12975" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Spread Count" slicecount="1" values="48">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Width" slicecount="1" values="3.51">
-   </PIN>
-   <PIN pinname="Input" slicecount="1" values="0.53">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="150" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1830" top="7065" width="0" height="0">
    </BOUNDS>
