@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\newemka980\Documents\mabwork\SELECTION VVVV\mabmod\VVVV-tools-and-stuff\modulators\modulators21.v4p" systemname="modulators21" filename="F:\SELECTION VVVV\node bank\modulators21.v4p" scrollx="1140" scrolly="0" locked="0">
+   <PATCH nodename="C:\Users\newemka980\Documents\mabwork\SELECTION VVVV\mabmod\VVVV-tools-and-stuff\modulators\modulators21.v4p" systemname="modulators21" filename="F:\SELECTION VVVV\node bank\modulators21.v4p" scrollx="0" scrolly="0" locked="0">
    <BOUNDS type="Window" left="12795" top="2805" width="21405" height="12675">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
@@ -59,7 +59,7 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0">
    </PIN>
@@ -129,12 +129,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="71" dstpinname="Period">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="71" dstpinname="Reset" linkstyle="VHV">
-   <LINKPOINT x="1170" y="5040">
-   </LINKPOINT>
-   <LINKPOINT x="5460" y="5040">
-   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="150" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1830" top="7065" width="0" height="0">
@@ -291,7 +285,7 @@
    <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="194" dstpinname="Input 2" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="195">
-   <BOUNDS type="Node" left="6720" top="12570" width="100" height="100">
+   <BOUNDS type="Node" left="6855" top="12645" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -299,7 +293,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="196">
@@ -319,12 +313,6 @@
    <LINK srcnodeid="195" srcpinname="Output" dstnodeid="194" dstpinname="Input 1" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="195" dstpinname="Reset" linkstyle="VHV">
-   <LINKPOINT x="1140" y="5040">
-   </LINKPOINT>
-   <LINKPOINT x="7425" y="5040">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="190" srcpinname="Output" dstnodeid="187" dstpinname="Y Input Value">
    </LINK>
@@ -607,7 +595,7 @@
    <LINK srcnodeid="355" srcpinname="Output" dstnodeid="340" dstpinname="FilterTime">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="356">
-   <BOUNDS type="Node" left="4230" top="4365" width="100" height="100">
+   <BOUNDS type="Node" left="4710" top="4080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
@@ -839,7 +827,7 @@
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1">
    </PIN>
-   <PIN pinname="Key Match" slicecount="1" values="|oem7,Tab,F7,F8,F9,F10|">
+   <PIN pinname="Key Match" slicecount="1" values="|oem7,Tab,F7,F8,F9,F10,F11,D1|">
    </PIN>
    <PIN pinname="Tab" visible="1">
    </PIN>
@@ -854,6 +842,10 @@
    <PIN pinname="F9" visible="1">
    </PIN>
    <PIN pinname="F10" visible="1">
+   </PIN>
+   <PIN pinname="F11" visible="1">
+   </PIN>
+   <PIN pinname="D1" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="411" srcpinname="Device" dstnodeid="412" dstpinname="Keyboard">
@@ -875,9 +867,9 @@
    <LINK srcnodeid="411" srcpinname="Key Name" dstnodeid="413" dstpinname="Input String">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="416">
-   <BOUNDS type="Node" left="9840" top="1770" width="100" height="100">
+   <BOUNDS type="Node" left="5610" top="1785" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9840" top="1770" width="7215" height="570">
+   <BOUNDS type="Box" left="5610" top="1785" width="7215" height="570">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="9">
    </PIN>
@@ -1067,7 +1059,7 @@
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="Clamp">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
+   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="4">
    </PIN>
@@ -1114,4 +1106,136 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="412" srcpinname="F11" dstnodeid="414" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="443" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5400" top="3480" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5400" top="3480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|tempo multiplier|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="408" srcpinname="Output" dstnodeid="443" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Mod (Value)" nodename="Mod (Value)" componentmode="Hidden" id="444">
+   <BOUNDS type="Node" left="3210" top="12105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="496">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="445">
+   <BOUNDS type="Node" left="3225" top="11730" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Cycles" dstnodeid="445" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="446" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3225" top="12990" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3225" top="12990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="4/4">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="447">
+   <BOUNDS type="Node" left="3210" top="12540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="444" srcpinname="Output" dstnodeid="447" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="447" srcpinname="Output" dstnodeid="446" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="448">
+   <BOUNDS type="Node" left="4305" top="11760" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4305" top="11760" width="795" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="449">
+   <BOUNDS type="Node" left="4005" top="12345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4005" top="12345" width="2805" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="8" values="2,4,8,16,32,64,128,256">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="449" srcpinname="Y Output Value" dstnodeid="444" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="450">
+   <BOUNDS type="Node" left="2265" top="12615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Period" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Phase" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Pause" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reverse" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="422" srcpinname="period" dstnodeid="450" dstpinname="Period">
+   </LINK>
+   <LINK srcnodeid="450" srcpinname="Cycles" dstnodeid="444" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="451">
+   <BOUNDS type="Node" left="1245" top="4800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="451" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="412" srcpinname="D1" dstnodeid="451" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="451" srcpinname="Output" dstnodeid="71" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="451" srcpinname="Output" dstnodeid="195" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="451" srcpinname="Output" dstnodeid="450" dstpinname="Reset">
+   </LINK>
    </PATCH>
